@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+</head>
+
+<body>
+    <script>
+        let s1 = { nama: "Pegawai1", jabatan: "Manager" };
+        let s2 = { nama: "Pegawai2", jabatan: "Manager" };
+        let s3 = { nama: "Pegawai3", jabatan: "Asisten Manager" };
+        let s4 = { nama: "Pegawai4", jabatan: "Asisten Manager" };
+        let s5 = { nama: "Pegawai5", jabatan: "Asisten Manager" };
+        let s6 = { nama: "Pegawai6", jabatan: "Supervisor" };
+        let s7 = { nama: "Pegawai7", jabatan: "Supervisor" };
+        let s8 = { nama: "Pegawai8", jabatan: "Supervisor" };
+        let s9 = { nama: "Pegawai9", jabatan: "Staff" };
+        let s10 = { nama: "Pegawai10", jabatan: "Staff" };
+        let pegawai = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10];
+    </script>
+    <table style="padding: 10px; text-align: center; width: 100%">
+        <thead>
+            <tr>
+                <th>Nama Pegawai</th>
+                <th>Jabatan</th>
+                <th>Gaji Pokok</th>
+                <th>Tunjangan Jabatan</th>
+                <th>Tunjangan Kesehatan</th>
+                <th>Gaji Kotor</th>
+                <th>Agama</th>
+                <th>Zakat Profesi</th>
+                <th>Take Home Pay</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                for (let i = 0; i < pegawai.length; i++) {
+                    let pegawai_item = pegawai[i];
+                    let nama = pegawai_item.nama;
+                    let jabatan = pegawai_item.jabatan;
+                    let gapok;
+                    let Tunjangan_Jabatan;
+                    let tunjangan_kesehatan;
+                    let gaji_kotor;
+                    let agama;
+                    let zakat_Profesi;
+                    let take_HomePay;
+
+                    switch (jabatan) {
+                        case "Manager":
+                            gapok = 15000000;
+                            break;
+                        case "Asisten Manager":
+                            gapok = 10000000;
+                            break;
+                        case "Supervisor":
+                             gapok = 7000000;
+                            break;
+                        case "Staff":
+                             gapok = 4000000;
+                            break;
+                        default:
+                             gapok = 0;
+                    }
+                    Tunjangan_Jabatan = 0.2 * gapok;
+
+                    tunjangan_kesehatan = 0.1 * gapok;
+                    gaji_kotor = gapok + Tunjangan_Jabatan + tunjangan_kesehatan;
+                    agama = i % 2 !== 1;
+                    zakat_Profesi = agama && gaji_kotor >= 7000000 ? 0.025 * gaji_kotor : 0;
+                    take_HomePay = gaji_kotor - zakat_Profesi;
+                    const rowColor = i % 2 == 0 ? "#DEB6AB" : "#AC7D88";
+                    document.write(`
+<tr style="background-color:${rowColor}">
+              <td>${nama}</td>
+              <td>${jabatan}</td>
+              <td>${gapok}</td>
+              <td>${Tunjangan_Jabatan}</td>
+              <td>${tunjangan_kesehatan}</td>
+              <td>${gaji_kotor}</td>
+              <td>${agama ? "MUSLIM" : "NON MUSLIM"}</td>
+              <td>${zakat_Profesi}</td>
+              <td>${take_HomePay}</td>
+              </tr>`);
+                }
+            </script>
+    </table>
+    </tbody>
+</body>
+
+</html>
