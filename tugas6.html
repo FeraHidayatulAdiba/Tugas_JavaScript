@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 6</title>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#div1").click(function () {
+        $("#content").html(
+          "<h2>Hallo Saya Fera Hidayatul Adiba !</h2><p>Selamat datang di website sederhana saya .</p>"
+
+        );
+      });
+
+
+    });
+
+    $(document).ready(function () {
+      $("#div2").click(function () {
+        $("#content").html(
+          "<h2>Motto Hidup</h2><p>Bahagia dengan apa yang saya miliki .</p>"
+
+        );
+      });
+
+
+    });
+
+    $(document).ready(function () {
+      $("#div3").click(function () {
+        $("#content").html(
+          "<h2>Keahlian & Pengalam </h2><p>Keahlian : Ahli dalam dalam bidang desain ** Pengalaman : Membuat redisign web.</p>"
+
+        );
+      });
+
+
+    });  
+  </script>
+</head>
+
+<body>
+  <h2>PROFIL PRIBADI !</h2>
+  <div id="div1">Profil</div>
+  <div id="div2">Motto Hidup</div>
+  <div id="div3">Keahlian</div>
+
+  <div id="content">
+  </div>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</body>
+
+</html>
