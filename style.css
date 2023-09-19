@@ -1,0 +1,185 @@
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; 
+}
+
+.btn {
+    margin: 10px;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 30px;
+    position: relative;
+}
+
+.container-fluid {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1d742b; /* Warna saat hover */
+}
+
+h3{
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.row {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+ul {
+    list-style: square;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.list-item {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.row {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+.card {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 5px;
+    margin-bottom: 5px; 
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px; 
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
+img {
+    width: 500px; 
+    height: 350px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.row {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+address {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px; 
+}
+
+address strong {
+    font-weight: bold;
+}
+
+address a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
